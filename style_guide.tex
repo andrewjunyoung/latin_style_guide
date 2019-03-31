@@ -1,0 +1,473 @@
+\documentclass{article}
+
+%% Begin package imports %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Language and font encodings
+\usepackage[english]{babel}
+% Package for angle quotes etc.
+\usepackage[T1]{fontenc}
+% Set page size and margins
+\usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% End package imports %%
+%% Begin custom sequences %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\standard}[1]{\quad  \\ \textbf{Standard:} {#1}}
+
+\newcommand{\examples}[1]{
+\textbf{Examples:} \begin{itemize}
+#1
+\end{itemize}
+}
+
+\newcommand{\example}[1]{\item \textit{#1}}
+\newcommand{\nonexample}[2]{\item \textbf{Not:} \textit{#1} \textbf{Instead:}
+  \textit{#2}}
+\newcommand{\bothokay}[2]{\item \textit{#1} \textbf{Also:} \textit{#2}}
+
+\newcommand{\nonexamples}[1]{
+  \textbf{Non examples:} \begin{itemize}
+      #1
+  \end{itemize}
+}
+
+\newcommand{\explanation}[1]{\textbf{Explanation:} #1}
+
+\newcommand{\langlequote}{\guillemotleft}
+\newcommand{\ranglequote}{\guillemotright}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% End custom sequences %%
+%% Begin document contents %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{Young's definitive style guide for the latin alphabet}
+\author{Andrew J. Young}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\end{abstract}
+
+\section{Introduction}
+\label{sec:intro}
+
+\section{Upper case}
+
+\subsection{Sentence heads and tails}
+
+\label{s:upper_case:sentence_heads}
+\standard{Sentences are to begin with a single capital letter. A capital letter
+is defined to be «The upper case form of a single character from the [extended]
+Latin alphabet».}
+
+\examples{
+  \example{The quick brown fox jumped over the lazy dog.}
+  \nonexample{LLamas are an animal native to South America.}{Llamas are an
+  animal native to South America.}
+  \nonexample{IJsselmeer is the name of the closed off inland bay in the central
+  Netherlands.}{Ijsselmeer is the name of the closed off inland bay in the
+  central Netherlands.}
+}
+
+\explanation{This follows a common convention among all dual case languages to
+capitalize the first characters of sentences. We accept this convention, for it
+helps guide the eye towards the beginnings of sentences and passages.
+
+All other letters should be lowercase, firstly because they are more readable,
+and secondly because this makes the text thereafter more predictable, including
+for searching text.
+
+We restrict the use of digraphs because digraphs are language specific and
+inconsistent. Some languages treat digraphs as 2 characters for collation, while
+others treat the same digraph as 1 character. In loanwords, readers should not
+be expected to know rules for digraphs. It is most consistent to treat the latin
+alphabet as having exactly 26 letters, and that these are always separate.
+}
+
+\label{s:upper_case:sentence_tails}
+\standard{All characters in a sentence other than the first character are to be
+lower case, unless mentioned in one of the exceptions in this section.}
+
+\subsection{Proper nouns}
+
+\label{s:upper_case:proper_nouns}
+\standard{Proper nouns are to be capitalized in all contexts, but only when used
+as a noun. In other words, words which take their root from a proper noun should
+not be capitalized. Proper nouns normally include \langlequote the \ranglequote
+where appropriate.}
+
+\examples{
+  \example{I just called Mary Goldberg to let her know that im home.}
+  \example{Did you know that she studied at Cambridge University?}
+  \nonexample{I thought she studied at the University of Oxford?}{I thought
+  she studied at The University Of Oxford?}
+  \nonexample{California is a state in the USA.}{California is a state in The
+  USA.}
+  \nonexample{I believe in god.}{I believe in God.}
+  \nonexample{I believe in a God.}{I believe in a god.}
+  \nonexample{Did you know that they're German?}{Did you know that they're
+  german?}
+}
+
+\section{Acronyms}
+
+\label{s:upper_case:proper_nouns}
+\standard{Acronyms, including initialisms, are to be written as consecutive
+upper case letters with no spaces or delimiters between them.}
+
+\examples{
+  \example{The US is a signatory country to NATO.}
+  \example{As of 2018, the permanent UN security council members are the China,
+  France, Russia, The UK, and The USA.}
+}
+
+\standard{Acronyms which are not initialisms may be written in lower case
+letters. This should be kept consistent with rules on proper nouns.}
+
+\examples{
+  \nonexample{The US is a signatory country to nato.}{The US is a signatory
+  country to NATO. \textbf{Or:} The US is a signatory country to Nato.}
+  \bothokay{UNICEF is a subsidiary of the UN.}{Unicef is a subsidiary of the
+  UN.}
+}
+
+\section{Punctuation}
+
+\subsection{Colons}
+
+\standard{Colons are to connect related, otherwise incomplete sentences.}
+
+\standard{Colons are to describe preceding sentences, including with further
+deductive or descriptive statements.}
+
+\standard{Colons are used to introduce dialog, both in plays, and in written
+passages.}
+
+\standard{Colons are used to indicate omission of text, including letters,
+words, or sections [See \ref{s:ellipsis}].}
+
+\examples{
+  \example{Kings Cross S:t Pancras}
+  \example{D:r Cruz runs an office on the edge of town.}
+  \example{The : fox jumps :.}
+}
+
+\standard{Colons are used in enumerated lists to separate numbers and following
+text.}
+
+\examples{
+  \example{We need to \begin{enumerate}
+    \item find the bag;
+    \item get the money;
+    \item be home in time for dinner.
+  \end{enumerate}}
+}
+
+\subsection{Dash}
+
+\standard{Dashes are used to denote ranges of time and space.}
+
+\examples{
+  \example{The French and Indian War (1754 - 1763) was fought in western
+  Pennsylvania and along the present US - Canada border.}
+  \example{The Tokyo - Osaka express train departs at 3.15 PM.}
+}
+
+\standard{Dashes are used to denote relation in certain contexts.}
+
+\examples{
+  \example{The US - Canada border spans east - west.}
+  \example{The Eagles beat the Hawks 31 - 0.}
+}
+
+\standard{Dashes are used to denote subcategorization, including in dates and
+locations. When used with numbers it should be used without a space.}
+
+\examples{
+  \example{The date is 2018-11-3.}
+  \example{He addressed the package to \langlequote China - Beijing - Wangfujing
+  \ranglequote.}
+  \example{Welcome to the Computing 3-12 course, where we cover advanced
+  computer architecture.}
+  \example{Answer question 1-a first}
+}
+
+\standard{All dashes to be used are en dashes.}
+
+\explanation{}
+
+\subsection{Semicolons}
+
+\standard{Semicolons are to be used for iteration, and in place of iterative
+commas.}
+
+\examples{
+	\example{The people present were Jamie, a man from New Zealand; John, the
+milkman's son; and George, a gaunt kind of man with no friends.}
+	\example{Several fast food restaurants can be found within the following
+cities: London, England; Paris, France; Dublin, Ireland; Madrid, Spain.}
+	\nonexample{Here are three examples of familiar sequences: one, two, three;
+a, b, c; first, second, third.}{Here are three examples of familiar sequences:
+\langlequote one; two; three \ranglequote ; \langlequote a; b; c \ranglequote ;
+\langlequote first; second; third \ranglequote .}
+}
+
+\subsection{Question marks}
+\label{section:question_marks}
+
+\standard{Opening and closing question marks are to be used to enclose
+question sentences.}
+
+\examples{
+	\example{She came to me and asked: \langlequote ?`What time is it?
+  \ranglequote.}
+	\example{\v{C}ingis Xan (?`1162? -- 1227) was the founder of the Mongol Empire.}
+}
+
+\standard{Opening and closing question marks follow the same rules as opening
+and closing brackets, respectively}
+
+\standard{Question commas are to be used one after another in conjunction.}
+
+\examples{
+	\example{?`Is it written in good form? ?`Style? ?`Meaning?}
+}
+
+\standard{Question marks take the place of periods when used at the end of
+sentences.}
+
+\subsection{Exclamation marks}
+
+Exclamation marks follow the same rules as \ref{section:question_marks}
+
+\examples{
+  \example{\langlequote !` Stop ! \ranglequote yelled the guard.}
+}
+
+\subsection{Commas}
+
+% TODO: vocative commas?
+
+\standard{Commas are principally used for separation of clauses.}
+
+\standard{When clauses are separated with conjunctions, the comma should appear
+before the conjunction.}
+
+\examples{
+  \example{Mary walked to the party, but she couldnt walk home.}
+  \example{Designer clothes are silly, and i can't afford them anyway.}
+  \example{!` Don't push that button, or twelve tons of high explosives will go off
+  right under our feet!}
+}
+
+\standard{Commas are advised for sentence initiating adverbs such as
+\langlequote however \ranglequote; \langlequote in fact \ranglequote; and
+\langlequote nevertheless \ranglequote. This includes when these adverbs are
+used mid phrase. However, this usage is optional}
+
+\examples{
+  \bothokay{Therefore, a comma would be appropriate in this sentence.}{Therefore
+  a comma would be appropriate in this sentence.}
+  \bothokay{Nevertheless, it is not needed.}{Nevertheless it is not needed.}
+}
+
+\standard{When adverbs are used mid phrase, commas are advised.}
+
+\examples{
+  \example{In this sentence, furthermore, commas would be called for.}
+  \nonexample{This sentence is similar; however, a semicolon is used as
+  well.}{This sentence is similar. However, a semicolon is used as well.}
+}
+
+\standard{Geographical names do not include commas.}
+
+\examples{
+  \example{Take this package to Tallahassee Florida}
+}
+
+\standard{Dates do not include commas.}
+
+\examples{
+  \example{February 3rd 1922: on that day I discovered the meaning of loss.}
+}
+
+\standard{The preferred notation for parenthetical phrases is the parenthesis.
+\ref{section:parenthesis}.}
+
+\subsection{Ellipsis}
+
+\standard{Ellipses are to be written as 2 unspaced periods.}
+
+\standard{Ellipses indicate omission of text, including letters, words, or
+sections.}
+
+\standard{Ellipses are used to indicate silence.}
+
+\standard{Ellipses are used to denote ranges of time and space [see
+\ref{e:dashes}].}
+
+\examples{
+  \example{The French and Indian War (1754 .. 1763) was fought in western
+  Pennsylvania and along the present US - Canada border.}
+  \example{The Tokyo .. Osaka express train departs at 3.15 PM.}
+}
+
+\subsection{Periods}
+
+\standard{Periods appear at the end of sentences \ref{def:sentence}, directly
+after the final word of the preceding sentence and followed by a single space.
+The character immediately after a period should be a capital letter.}
+
+\subsection{Commas}
+
+\standard{Phrase commas appear at the end of phrases \ref{def:phrase},
+directly after the final word of the preceding phrase, and followed by a
+single space.}
+
+\subsection{Quotation marks}
+
+\standard{By default, languages should use double angle quotes («\dots») to
+indicate segments of text with common purpose. This includes for speech,
+thoughts, and quotations.}
+
+\examples{
+    \example{\langlequote Come closer. \ranglequote he said softly.}
+    \example{Hamlet: \langlequote To be or not to be, that is the question.
+    \ranglequote}
+    \example{At the time i thought \langlequote Gosh, that's a nice dress.
+  \ranglequote.}
+  \example{In the words of Jean-Paul Sartre: \langlequote Man is condemned to be
+  free; because once thrown into the world, he is responsible for everything he
+  does. \ranglequote .}
+}
+
+%\explanation{There are various clustering styles used in different Latin
+%scripts.  Of these the most dominant style is perhaps quotation marks (“” \"\"
+%‘’ \'\'), but also brackets ( \lbrack \rbrack () \{\} ⟨⟩ ), single and double
+%angle brackets (‹› «»), and, in some style guides, dashes.
+%
+%The most common global convention is to use quotation marks rather than
+%alternatives, which is true across language families and national standards.
+%However, standards disagree on where to put commas and how to angle them, with
+%standards including »\dots«, „\dots”, ”\dots”, «\dots», and “\dots”. In
+%consistency with the usage of brackets, quotation marks should protrude to the
+%left for opening quotes, and to the right for closing quotes.
+%
+%Languages which commonly use \' and \", which dont have distinct opening and
+%closing forms, have difficulty with clearly distinguishing beginnings and ends
+%of bracketed sections, and often have trouble nesting. This problem is also
+%comes about when using dashes, which is also quite rare and nonstandard in most
+%languages.
+%
+%From this, we conclude that we want to use quotation marks with distinct opening
+%and closing forms (“” ‘’ ‹› «»). Note that angle quotes are considered to be a
+%specific typographical style of quotation mark where the marks are placed in the
+%middle of the line.
+%
+%In order to avoid clashes with the apostrophe, we choose to settle with angle
+%quotes over inverted commas. We see in figure
+%\ref{fig:inverted_commas_and_apostrophe} that quotation marks clash with
+%apostrophes, which are used across Latin scripts and even as necessary letters
+%in many alphabets. Compare this with \ref{fig:angle_quotes_and_apostrophe},
+%where the two are clearly distinct.
+%
+%Finally, we decide to use single angle quotes as the default in order to more
+%clearly disambiguate them from other forms of punctuation such as inequality
+%signs and pointy brackets. This is also in line with popular usage of angle
+%quotes.
+%}
+
+\subsection{Slashes}
+
+\standard{Slashes are used to indicate alternative choices.}
+
+\examples{
+  \example{?` Do you agree Y / N?}
+}
+
+\standard{Slashes are used to indicate choices in the case of ambiguity,
+particularly when this affects word choice. In some cases, round brackets may be
+favored. See also \ref{sec:brackets}.}
+
+\examples{
+  \example{The waiter / waitress hasnt come yet.}
+  \example{The designation Assyrian / Chaldean / Syriac appeared on american and
+  swedish censuses in response to the Syriac naming dispute.}
+  \example{If he / she wants to come, then that is completely fine.}
+}
+
+\subsection{Nested quotation marks}
+
+\standard{Nested quotation marks should not differ from the outermost quotation
+marks. If clarity is warranted between quotation marks, he level of nesting can
+be indicated by a subscript number.}
+
+\examples{
+  \example{My sister says \langlequote The man told me \langlequote You need
+  to leave now \ranglequote \ranglequote.}
+  \example{My sister says \langlequote \textsubscript{1} The man told me
+  \langlequote \textsubscript{2} You need to leave now \ranglequote
+  \textsubscript{2} \ranglequote \textsubscript{1}.}
+}
+
+\subsection{Brackets}
+
+\standard{Brackets can be used to indicate choices in the case of ambiguity,
+particularly when this affects word choice. See also \ref{sec:slashes}.}
+
+\examples{
+  \example{If (s)he wants to come, then that is completely fine.}
+  \example{The culprit(s) are still on the run.}
+}
+
+\subsubsection{Asides}
+
+\standard{Asides are indicated by square brackets ( \lbrack \rbrack ).}
+
+\examples{
+  \example{If the dog falls ill [ which I doubt will happen ] then we can take
+  it to the vet.}
+  \example{If I slip on ice [ funny though that would be ] its likely to hurt.}
+  \example{The lion [ the biggest of the cats ] [ the king of the jungle ] sat
+  in its enclosure unstirred by the photographers around it.}
+  \example{[ Written on a list ] \langlequote Buy eggs [ done ]. \ranglequote}
+}
+
+\subsection{Defunct punctuation}
+
+This section alphabetically lists punctuation which is not recommended for
+common use. It is given to provide readers with the ability to look up these
+characters should they open this manual. Note that use of any of the below
+punctuation is considered as bad practice.
+
+\begin{enumerate}
+  \item em dash
+  \item hyphen (except as a letter of the latin alphabet)
+  \item hyphenminus
+  \item quotation marks
+  \item quotation marks
+\end{enumerate}
+
+\section{Custom notation}
+
+\standard{Custom notation can be introduced, such as in plays, using the
+backslash and curly brackets to indicate that text is to be considered a certain
+way. These should be defined either before, or alongside their first appearance
+within a text.}
+
+\examples{
+  \example{Hamlet: \textbackslash aside\{A little more than kin, and less than
+  kind.\}}
+}
+
+\section{Numerals}
+
+\standard{Enumerated lists should be followed by a colon
+
+
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% End document contents %%
+
